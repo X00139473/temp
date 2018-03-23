@@ -1,0 +1,33 @@
+@(employeeForm: Form[models.Employee])
+
+@import helper._
+
+@main("Add Employee") {
+    <p class="lead"> Add a new Employee</p>
+
+        <!-- Using the views.html.elpers package to create the form -->
+        @form(action=routes.HomeController.addEmployeeSubmit(), 'class -> "form-horizontal", 'role -> "form") {
+            @* CSRF attack prevention *@
+            @* This token, send by the controller, will be used to authenticate the form submission *@
+            @CSRF.formField
+    
+            <!-- Build the form, adding an input for each field -->
+            <!-- Note the label parameter -->
+            @inputText(employeeForm("name"), '_label -> "Name", 'class -> "form-control")
+            @inputText(employeeForm("email"), '_label -> "Email", 'class -> "form-control")
+            @inputText(employeeForm("department"), '_label -> "Department", 'class -> "form-control")
+            @inputText(employeeForm("DOB"), '_label -> "Date of Birth", 'class -> "form-control")
+    
+            <!-- Add a submit button -->
+            @inputText(employeeForm("employee_Num"), '_label -> "", 'hidden-> "hidden")
+    
+            <!-- Add a submit button -->
+            <div class="actions">
+                <input type="submit" value="Add/Update Employee" class="btn btn-primary">
+                <a href="@routes.HomeController.employee">
+                    <button type="button" class="btn btn-warning">Cancel</button>
+                </a>
+            </div>
+        } @* End of form *@
+
+}
