@@ -22,17 +22,17 @@ import play.mvc.Http.Context.Implicit._
 import play.data._
 import play.core.j.PlayFormsMagicForJava._
 
-object employee extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[List[models.Employee],play.twirl.api.HtmlFormat.Appendable] {
+object employee extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template2[List[models.Employee],models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(employees: List[models.Employee]):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(employees: List[models.Employee], user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.36*/(""" """),format.raw/*1.37*/("""<!-- Declaring a parameter for the product list -->
+Seq[Any](format.raw/*1.61*/(""" """),format.raw/*1.62*/("""<!-- Declaring a parameter for the product list -->
 
-"""),_display_(/*3.2*/main("Employees")/*3.19*/ {_display_(Seq[Any](format.raw/*3.21*/("""
+"""),_display_(/*3.2*/main("Employees", user)/*3.25*/ {_display_(Seq[Any](format.raw/*3.27*/("""
 
 """),format.raw/*5.1*/("""<p class="lead">Merchandise</p>
 
@@ -97,9 +97,9 @@ Seq[Any](format.raw/*1.36*/(""" """),format.raw/*1.37*/("""<!-- Declaring a para
     }
   }
 
-  def render(employees:List[models.Employee]): play.twirl.api.HtmlFormat.Appendable = apply(employees)
+  def render(employees:List[models.Employee],user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(employees,user)
 
-  def f:((List[models.Employee]) => play.twirl.api.HtmlFormat.Appendable) = (employees) => apply(employees)
+  def f:((List[models.Employee],models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (employees,user) => apply(employees,user)
 
   def ref: this.type = this
 
@@ -108,10 +108,10 @@ Seq[Any](format.raw/*1.36*/(""" """),format.raw/*1.37*/("""<!-- Declaring a para
 
               /*
                   -- GENERATED --
-                  DATE: Fri Mar 23 01:21:52 GMT 2018
+                  DATE: Mon Apr 09 03:46:39 IST 2018
                   SOURCE: /home/wdd/webapps/Practice/PlayPractice12/CRUDPractice/play-java-seed/app/views/employee.scala.html
-                  HASH: f114399f0db9ef52196e53a80112526d3890a279
-                  MATRIX: 966->1|1095->35|1123->36|1202->90|1227->107|1266->109|1294->111|1354->205|1381->207|1421->239|1460->241|1489->244|1554->283|1568->288|1604->303|1634->306|1672->314|1701->316|1976->667|2008->673|2041->690|2080->691|2115->699|2167->724|2177->725|2206->733|2265->765|2275->766|2310->780|2339->781|2405->817|2434->835|2466->840|2532->879|2547->885|2597->914
+                  HASH: 4691bed6ff34b0f6912816d83c87b95d4ec05013
+                  MATRIX: 984->1|1138->60|1166->61|1245->115|1276->138|1315->140|1343->142|1403->236|1430->238|1470->270|1509->272|1538->275|1603->314|1617->319|1653->334|1683->337|1721->345|1750->347|2025->698|2057->704|2090->721|2129->722|2164->730|2216->755|2226->756|2255->764|2314->796|2324->797|2359->811|2388->812|2454->848|2483->866|2515->871|2581->910|2596->916|2646->945
                   LINES: 28->1|33->1|33->1|35->3|35->3|35->3|37->5|39->7|40->8|40->8|40->8|41->9|42->10|42->10|42->10|43->11|44->12|46->14|71->40|72->41|72->41|72->41|73->42|75->44|75->44|75->44|77->46|77->46|77->46|77->46|82->51|82->51|85->54|90->59|90->59|90->59
                   -- GENERATED --
               */

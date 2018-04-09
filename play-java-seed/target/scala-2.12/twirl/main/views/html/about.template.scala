@@ -22,26 +22,27 @@ import play.mvc.Http.Context.Implicit._
 import play.data._
 import play.core.j.PlayFormsMagicForJava._
 
-object about extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {
+object about extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply():play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](_display_(/*1.2*/main("About Us")/*1.18*/{_display_(Seq[Any](format.raw/*1.19*/("""
+Seq[Any](format.raw/*2.1*/("""
+"""),_display_(/*3.2*/main("About Us", user)/*3.24*/{_display_(Seq[Any](format.raw/*3.25*/("""
 
 
-    """),format.raw/*4.5*/("""<h4>About Us Content here</h4>
+    """),format.raw/*6.5*/("""<h4>About Us Content here</h4>
 """)))}))
       }
     }
   }
 
-  def render(): play.twirl.api.HtmlFormat.Appendable = apply()
+  def render(user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(user)
 
-  def f:(() => play.twirl.api.HtmlFormat.Appendable) = () => apply()
+  def f:((models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (user) => apply(user)
 
   def ref: this.type = this
 
@@ -50,11 +51,11 @@ Seq[Any](_display_(/*1.2*/main("About Us")/*1.18*/{_display_(Seq[Any](format.raw
 
               /*
                   -- GENERATED --
-                  DATE: Thu Mar 22 23:02:56 GMT 2018
+                  DATE: Mon Apr 09 03:46:02 IST 2018
                   SOURCE: /home/wdd/webapps/Practice/PlayPractice12/CRUDPractice/play-java-seed/app/views/about.scala.html
-                  HASH: d560e6e4bc66d250d7d4bf113f1628ec4b831019
-                  MATRIX: 1030->1|1054->17|1092->18|1125->25
-                  LINES: 33->1|33->1|33->1|36->4
+                  HASH: 5274cec21c83ae3fc07b0d495b8d77afbfa9c97b
+                  MATRIX: 959->1|1078->27|1105->29|1135->51|1173->52|1206->59
+                  LINES: 28->1|33->2|34->3|34->3|34->3|37->6
                   -- GENERATED --
               */
           

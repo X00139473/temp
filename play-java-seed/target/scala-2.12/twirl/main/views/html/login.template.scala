@@ -22,17 +22,17 @@ import play.mvc.Http.Context.Implicit._
 import play.data._
 import play.core.j.PlayFormsMagicForJava._
 
-object login extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template1[Form[models.users.Login],play.twirl.api.HtmlFormat.Appendable] {
+object login extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template2[Form[models.users.Login],models.users.User,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(loginForm: Form[models.users.Login]):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(loginForm: Form[models.users.Login],user: models.users.User):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 /*2.2*/import helper._
 
 
 Seq[Any](format.raw/*3.1*/("""
-"""),_display_(/*4.2*/main("Login")/*4.15*/{_display_(Seq[Any](format.raw/*4.16*/("""
+"""),_display_(/*4.2*/main("Login", user)/*4.21*/{_display_(Seq[Any](format.raw/*4.22*/("""
 
     """),format.raw/*6.5*/("""<div class="col-xs-s4">
         <h3>Sign in</h3>
@@ -71,9 +71,9 @@ Seq[Any](format.raw/*3.1*/("""
     }
   }
 
-  def render(loginForm:Form[models.users.Login]): play.twirl.api.HtmlFormat.Appendable = apply(loginForm)
+  def render(loginForm:Form[models.users.Login],user:models.users.User): play.twirl.api.HtmlFormat.Appendable = apply(loginForm,user)
 
-  def f:((Form[models.users.Login]) => play.twirl.api.HtmlFormat.Appendable) = (loginForm) => apply(loginForm)
+  def f:((Form[models.users.Login],models.users.User) => play.twirl.api.HtmlFormat.Appendable) = (loginForm,user) => apply(loginForm,user)
 
   def ref: this.type = this
 
@@ -82,10 +82,10 @@ Seq[Any](format.raw/*3.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sun Mar 11 22:28:28 GMT 2018
+                  DATE: Mon Apr 09 04:58:38 IST 2018
                   SOURCE: /home/wdd/webapps/Practice/PlayPractice12/CRUDPractice/play-java-seed/app/views/login.scala.html
-                  HASH: beffc97ae01ec83853621c83600ff406bb7b53dc
-                  MATRIX: 966->1|1076->40|1120->56|1147->58|1168->71|1206->72|1238->78|1375->189|1412->218|1450->219|1491->232|1568->282|1586->291|1627->311|1668->324|1713->338|1750->348|1789->378|1828->379|1869->392|1945->441|1959->446|2001->467|2042->480|2087->494|2124->504|2186->539|2201->545|2274->609|2314->611|2355->625|2368->629|2399->639|2441->653|2510->695|2651->815|2692->828|2780->889|2931->1019|2972->1032|3153->1182|3182->1200|3214->1205
+                  HASH: 9aea15be24d87b2440dec28d9347a4b85bf50691
+                  MATRIX: 984->1|1118->64|1162->80|1189->82|1216->101|1254->102|1286->108|1423->219|1460->248|1498->249|1539->262|1616->312|1634->321|1675->341|1716->354|1761->368|1798->378|1837->408|1876->409|1917->422|1993->471|2007->476|2049->497|2090->510|2135->524|2172->534|2234->569|2249->575|2322->639|2362->641|2403->655|2416->659|2447->669|2489->683|2558->725|2699->845|2740->858|2828->919|2979->1049|3020->1062|3201->1212|3230->1230|3262->1235
                   LINES: 28->1|31->2|34->3|35->4|35->4|35->4|37->6|40->9|40->9|40->9|41->10|42->11|42->11|42->11|43->12|44->13|45->14|45->14|45->14|46->15|47->16|47->16|47->16|48->17|49->18|51->20|53->22|53->22|53->22|53->22|54->23|54->23|54->23|56->25|57->26|58->27|59->28|61->30|62->31|63->32|67->36|67->36|68->37
                   -- GENERATED --
               */

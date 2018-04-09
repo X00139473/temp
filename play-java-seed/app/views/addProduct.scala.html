@@ -1,12 +1,13 @@
-@(productForm: Form[models.Product])
+@(productForm: Form[models.Product], user: models.users.User)
 
 @import helper._
 
-@main("Add product"){
+@main("Add product", user){
+    
     <p class="lead">Add or update a product </p>
 
     <!-- Using the views.html.elpers package to create the form -->
-    @form(action=routes.HomeController.addProductSubmit(), 'class -> "form-horizontal", 'role -> "form") {
+    @form(action=routes.HomeController.addProductSubmit(), 'class -> "form-horizontal", 'role -> "form", 'enctype -> "multipart/form-data") {
         @* CSRF attack prevention *@
         @* This token, send by the controller, will be used to authenticate the form submission *@
         @CSRF.formField
@@ -26,6 +27,10 @@
 
         <!-- Add a submit button -->
         @inputText(productForm("id"), '_label -> "", 'hidden-> "hidden")
+    
+        <label>Upload product image</label>
+        <input class="btn-sm btn-default" type="file" name="upload">
+        <br><br>
 
         <!-- Add a submit button -->
         <div class="actions">
@@ -35,4 +40,6 @@
             </a>
         </div>
     } @* End of form *@
+
+
 } @* End of page content *@

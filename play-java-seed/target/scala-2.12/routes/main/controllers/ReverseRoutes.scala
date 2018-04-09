@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/webapps/Practice/PlayPractice12/CRUDPractice/play-java-seed/conf/routes
-// @DATE:Fri Mar 23 00:20:30 GMT 2018
+// @DATE:Mon Apr 09 03:43:08 IST 2018
 
 import play.api.mvc.Call
 
@@ -91,6 +91,12 @@ package controllers {
     def loginSubmit(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "loginSubmit")
+    }
+  
+    // @LINE:36
+    def logout(): Call = {
+      
+      Call("GET", _prefix + { _defaultPrefix } + "logout")
     }
   
     // @LINE:34

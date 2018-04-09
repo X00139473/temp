@@ -1,9 +1,9 @@
-@(products: List[models.Product], categories: List[models.Category]) <!-- Declaring a parameter for the product list -->
+@(products: List[models.Product], categories: List[models.Category], user: models.users.User, env: play.api.Environment) <!-- Declaring a parameter for the product list -->
 
-@main("Games"){
-
+@main("Games", user){
+    <div class ="wrapper">
     <p class="lead">Product Catalogue</p>
-    <div id="wrapper">
+    <br>
     <div class="row">
         <div class="col-sm-2">
             <h4>Categories</h4>
@@ -16,10 +16,10 @@
                     }
             </div>
         </div>
-        <div class="col-sm-10">
     
-      
     
+
+    <div class="col-sm-10">
     @* Displays successful product message from flash - if set *@
     @if(flash.containsKey("success")) {
       <div class="alert alert-success">
@@ -33,7 +33,8 @@
         <!-- The header row-->
     
         <tr>
-    
+          <th>Image</th>
+
           <th>Name</th>
     
           <th>Genre</th>
@@ -55,7 +56,11 @@
            each product found *@
         @for(p<-products){ 
           <tr>
-              
+              @if(env.resource("public/images/productImages/thumbnails/" + p.getId + ".png").isDefined) {
+                    <td><img src="/assets/images/productImages/thumbnails/@(p.getId + ".png")"/></td>
+                } else {
+                    <td><img src="/assets/images/productImages/thumbnails/noImage.png"/></td>
+                }
               <td>@p.getName</td>
               <td>@p.getCategory.getName</td>
               <td>@p.getDescription </td>

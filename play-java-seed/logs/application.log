@@ -1,98 +1,79 @@
-2018-03-23 00:38:37,088 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-5 - Creating Pool for datasource 'default'
-2018-03-23 00:38:37,136 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-5 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2018-03-23 00:38:38,104 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-5 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-03-23 00:38:38,311 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-5 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2018-04-09 04:58:48,566 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-3 - Creating Pool for datasource 'default'
+2018-04-09 04:58:48,860 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-3 - Database [default] connected at jdbc:h2:file:./data/productsDB
+2018-04-09 04:58:49,969 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-3 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
+2018-04-09 04:58:50,290 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-3 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2018-03-23 00:38:38,340 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-5 - Application started (Dev)
-2018-03-23 00:58:49,446 [INFO] from application in application-akka.actor.default-dispatcher-34 - Shutting down connection pool.
-2018-03-23 00:58:49,642 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-80 - Creating Pool for datasource 'default'
-2018-03-23 00:58:49,650 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-80 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2018-03-23 00:58:49,811 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-80 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-03-23 00:58:49,909 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-80 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2018-03-23 00:58:49,929 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-80 - Application started (Dev)
-2018-03-23 01:05:28,606 [INFO] from application in application-akka.actor.default-dispatcher-12 - Shutting down connection pool.
-2018-03-23 01:05:28,806 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-90 - Creating Pool for datasource 'default'
-2018-03-23 01:05:28,818 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-90 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2018-03-23 01:05:28,933 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-90 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-03-23 01:05:29,041 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-90 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2018-03-23 01:05:29,053 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-90 - Application started (Dev)
-2018-03-23 01:05:41,608 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
-2018-03-23 01:05:41,894 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-100 - Creating Pool for datasource 'default'
-2018-03-23 01:05:41,922 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-100 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2018-03-23 01:05:42,090 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-100 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-03-23 01:05:42,184 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-100 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2018-03-23 01:05:42,196 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-100 - Application started (Dev)
-2018-03-23 01:13:37,809 [INFO] from application in application-akka.actor.default-dispatcher-5 - Shutting down connection pool.
-2018-03-23 01:13:37,989 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-108 - Creating Pool for datasource 'default'
-2018-03-23 01:13:38,015 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-108 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2018-03-23 01:13:38,207 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-108 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-03-23 01:13:38,301 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-108 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2018-03-23 01:13:38,302 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-108 - Application started (Dev)
-2018-03-23 01:19:51,001 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
-2018-03-23 01:19:51,141 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-124 - Creating Pool for datasource 'default'
-2018-03-23 01:19:51,145 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-124 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2018-03-23 01:19:51,294 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-124 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-03-23 01:19:51,365 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-124 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2018-03-23 01:19:51,369 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-124 - Application started (Dev)
-2018-03-23 01:21:12,074 [INFO] from application in application-akka.actor.default-dispatcher-8 - Shutting down connection pool.
-2018-03-23 01:21:12,214 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-125 - Creating Pool for datasource 'default'
-2018-03-23 01:21:12,226 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-125 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2018-03-23 01:21:12,378 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-125 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-03-23 01:21:12,441 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-125 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2018-03-23 01:21:12,443 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-125 - Application started (Dev)
-2018-03-23 01:21:38,207 [INFO] from application in application-akka.actor.default-dispatcher-4 - Shutting down connection pool.
-2018-03-23 01:21:38,365 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-133 - Creating Pool for datasource 'default'
-2018-03-23 01:21:38,371 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-133 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2018-03-23 01:21:38,513 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-133 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-03-23 01:21:38,583 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-133 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2018-03-23 01:21:38,584 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-133 - Application started (Dev)
-2018-03-23 01:21:54,708 [INFO] from application in application-akka.actor.default-dispatcher-6 - Shutting down connection pool.
-2018-03-23 01:21:54,842 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-127 - Creating Pool for datasource 'default'
-2018-03-23 01:21:54,845 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-127 - Database [default] connected at jdbc:h2:file:./data/productsDB
-2018-03-23 01:21:54,954 [WARN] from org.hibernate.validator.messageinterpolation.ParameterMessageInterpolator in play-dev-mode-akka.actor.default-dispatcher-127 - HV000184: ParameterMessageInterpolator has been chosen, EL interpolation will not be supported
-2018-03-23 01:21:55,002 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-127 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2018-03-23 01:21:55,003 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-127 - Application started (Dev)
+2018-04-09 04:58:50,313 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-3 - Application started (Dev)
+2018-04-09 04:58:50,641 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-2 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:50,641 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:50,653 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-2 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:50,659 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:51,031 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:51,031 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:51,169 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-3 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:51,170 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-3 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:54,973 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-3 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:54,973 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-3 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:55,138 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-3 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:55,139 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-3 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:55,156 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:55,158 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:55,183 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-2 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:55,183 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-2 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:55,201 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:55,208 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:55,258 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-2 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:55,263 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-2 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:55,273 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:55,280 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:55,308 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-2 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:55,309 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-2 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:55,394 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:55,394 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:55,408 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-3 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:55,408 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-3 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:55,457 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-3 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:55,457 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-3 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:58:55,487 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-2 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:58:55,487 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-2 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:59:01,927 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-3 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2018-04-09 04:59:01,928 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-3 - The JWT signature in the cookie does not match the locally computed signature with the server.
+This usually indicates the browser has a leftover cookie from another Play application,
+so clearing cookies may resolve this error message.
+2018-04-09 04:59:08,634 [WARN] from application in application-akka.actor.default-dispatcher-3 - The "validate" method in class "models.users.Login" is deprecated since Play 2.6. To migrate to class-level constraints see https://www.playframework.com/documentation/2.6.x/Migration26#java-form-changes and https://www.playframework.com/documentation/2.6.x/JavaForms#Advanced-validation

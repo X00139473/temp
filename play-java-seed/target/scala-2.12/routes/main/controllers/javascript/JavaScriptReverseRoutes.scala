@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/webapps/Practice/PlayPractice12/CRUDPractice/play-java-seed/conf/routes
-// @DATE:Fri Mar 23 00:20:30 GMT 2018
+// @DATE:Mon Apr 09 03:43:08 IST 2018
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -135,6 +135,16 @@ package controllers.javascript {
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "loginSubmit"})
+        }
+      """
+    )
+  
+    // @LINE:36
+    def logout: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.LoginController.logout",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "logout"})
         }
       """
     )

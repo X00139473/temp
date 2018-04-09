@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/wdd/webapps/Practice/PlayPractice12/CRUDPractice/play-java-seed/conf/routes
-// @DATE:Fri Mar 23 00:20:30 GMT 2018
+// @DATE:Mon Apr 09 03:43:08 IST 2018
 
 package router
 
@@ -56,6 +56,7 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """addProductSubmit""", """controllers.HomeController.addProductSubmit"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """login""", """controllers.LoginController.login"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """loginSubmit""", """controllers.LoginController.loginSubmit"""),
+    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """logout""", """controllers.LoginController.logout"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """assets/""" + "$" + """file<.+>""", """controllers.Assets.versioned(path:String = "/public", file:Asset)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
@@ -298,11 +299,29 @@ class Routes(
     )
   )
 
-  // @LINE:37
-  private[this] lazy val controllers_Assets_versioned13_route = Route("GET",
+  // @LINE:36
+  private[this] lazy val controllers_LoginController_logout13_route = Route("GET",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("logout")))
+  )
+  private[this] lazy val controllers_LoginController_logout13_invoker = createInvoker(
+    LoginController_1.logout,
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.LoginController",
+      "logout",
+      Nil,
+      "GET",
+      this.prefix + """logout""",
+      """""",
+      Seq()
+    )
+  )
+
+  // @LINE:38
+  private[this] lazy val controllers_Assets_versioned14_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
-  private[this] lazy val controllers_Assets_versioned13_invoker = createInvoker(
+  private[this] lazy val controllers_Assets_versioned14_invoker = createInvoker(
     Assets_2.versioned(fakeValue[String], fakeValue[Asset]),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
@@ -397,10 +416,16 @@ class Routes(
         controllers_LoginController_loginSubmit12_invoker.call(LoginController_1.loginSubmit)
       }
   
-    // @LINE:37
-    case controllers_Assets_versioned13_route(params@_) =>
+    // @LINE:36
+    case controllers_LoginController_logout13_route(params@_) =>
+      call { 
+        controllers_LoginController_logout13_invoker.call(LoginController_1.logout)
+      }
+  
+    // @LINE:38
+    case controllers_Assets_versioned14_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
-        controllers_Assets_versioned13_invoker.call(Assets_2.versioned(path, file))
+        controllers_Assets_versioned14_invoker.call(Assets_2.versioned(path, file))
       }
   }
 }

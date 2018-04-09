@@ -1,6 +1,6 @@
-@(employees: List[models.Employee]) <!-- Declaring a parameter for the product list -->
+@(employees: List[models.Employee], user: models.users.User) <!-- Declaring a parameter for the product list -->
 
-@main("Employees") {
+@main("Employees", user) {
 
 <p class="lead">Merchandise</p>
 
